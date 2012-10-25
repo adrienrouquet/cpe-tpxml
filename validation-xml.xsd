@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/validation-xml" xmlns:tns="http://www.example.org/validation-xml" elementFormDefault="qualified">
+	<xsd:element name="document">
+		<xsd:complexType>
+			<xsd:element ref="groups" maxOccurs="1" />
+			<xsd:element ref="pictures" maxOccurs="1" />
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="groups">
+		<xsd:element ref="group" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+	</xsd:element>
+	
 </schema>
