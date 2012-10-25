@@ -1,14 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/validation-xml" xmlns:tns="http://www.example.org/validation-xml" elementFormDefault="qualified">
-	<xsd:element name="document">
-		<xsd:complexType>
-			<xsd:element ref="groups" maxOccurs="1" />
-			<xsd:element ref="pictures" maxOccurs="1" />
-		</xsd:complexType>
-	</xsd:element>
+	<element name="document">
+		<complexType>
+			<sequence>
+				<element ref="groups" minOccurs="1" maxOccurs="1" />
+				<element ref="pictures" minOccurs="0" />
+			</sequence>
+		</complexType>
+	</element>
 	
-	<xsd:element name="groups">
-		<xsd:element ref="group" minOccurs="1" maxOccurs="unbounded" />
-	</xsd:element>
+	<element name="groups">
+		<complexType>
+			<sequence>
+				<element name="group" minOccurs="1" maxOccurs="unbounded">
+					<complexType>
+						<attribute name="name" type="string" use="required"/>
+					</complexType>
+				</element>	
+			</sequence>
+		</complexType>
+	</element>
+		
+	<element name="group">
+		<complexType>
+			<sequence>
+				<element ref="groupdescription" minOccurs="0" maxOccurs="1" />
+			</sequence>
+			<attribute name="name" type="string" use="required" />
+		</complexType>
+	</element>
+	
+	<element name="groupdescription">
+		<complexType>
+			<sequence>
+				<element name="name" type="string"/>
+				<element ref="othernames" minOccurs="0" maxOccurs="1" />
+				<element ref="childrengroups" minOccurs="0" maxOccurs="1" />
+				<element name="description" type="string" minOccurs="1" maxOccurs="1" />
+				<element ref="pictures" minOccurs="0" maxOccurs="1" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="othernames">
+		<complexType>
+			<sequence>
+				<element name="othername" type="string" minOccurs="0" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="childrengroups">
+		<complexType>
+			<sequence>
+				<element ref="group" minOccurs="0" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="pictures">
+		<complexType>
+			<sequence>
+				<element name="picture" minOccurs="1">
+					<complexType>
+						<attribute name="id" type="string" use="required"/>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="picture">
+		<complexType>
+			<sequence>
+				<element ref="picturedescription" minOccurs="0" maxOccurs="1" />
+			</sequence>
+			<attribute name="id" type="string" use="required" />
+			<attribute name="src" type="string" use="required" />
+		</complexType>
+	</element>
+	
+	<element name="picturedescription">
+		<complexType>
+			<sequence>
+				<element name="scientificname" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="location" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="sex" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="specimencondition" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="lifecyclestage" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="source" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="sourcecollection" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="imageuse" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="copyright" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="copyrightyears" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="comment" type="string" minOccurs="1" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
 	
 </schema>
