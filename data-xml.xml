@@ -2,58 +2,83 @@
 <document>
 	<groups>
 		<group name="mammalia">
-			<name>
-				Mammalia
-			</name>
-			<othernames>
-				<othername>Mammals</othername>
-			</othernames>
-			<childrengroup>
-				<group ref="triconodonts"></group>
-				<group ref="monotremata"></group>
-				<group ref="multituberculata"></group>
-				<group ref="marsupiala"></group>
-				<group ref="palaeoryctoids"></group>
-				<group ref="eutheria"></group>
-			</childrengroup>
-			<description>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</description>
-			<pictures>
-				<picture id="mam1" src="/img/mammalia1.jpg"></picture>
-				<picture id="mam2" src="/img/mammalia2.jpg"></picture>
-				<picture id="mam3" src="/img/mammalia3.jpg"></picture>
-			</pictures>
+			<groupdescription>
+				<name>
+					Mammalia
+				</name>
+				<othernames>
+					<othername>Mammals</othername>
+				</othernames>
+				<childrengroup>
+					<group name="triconodonts"></group>
+					<group name="monotremata"></group>
+					<group name="multituberculata"></group>
+					<group name="marsupiala"></group>
+					<group name="palaeoryctoids"></group>
+					<group name="eutheria"></group>
+				</childrengroup>
+				<description>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</description>
+				<pictures>
+					<picture id="mam1"></picture>
+					<picture id="mam2" src="/img/mammalia2.jpg"></picture>
+					<picture id="mam3" src="/img/mammalia3.jpg"></picture>
+				</pictures>
+			</groupdescription>
 		</group>
 		
 		<group name="marsupiala">
-			<name>
-				Marsupiala
-			</name>
-			<othernames>
-				<othername>Mammals</othername>
-			</othernames>
-			<childrengroup>
-				<group ref="didelphimorphia"></group>
-				<group ref="paucituberculata"></group>
-				<group ref="microbiotheria"></group>
-				<group ref="dasyuromorphia"></group>
-				<group ref="peramelemorphia"></group>
-				<group ref="notoryctemorphia"></group>
-				<group ref="diprotodontia"></group>
-			</childrengroup>
-			<description>
-				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-			</description>
-			<pictures>
-				<picture id="mar1" src="/img/marsupiala1.jpg"></picture>
-				<picture id="mar2" src="/img/marsupiala2.jpg"></picture>
-				<picture id="mar3" src="/img/marsupiala3.jpg"></picture>
-			</pictures>
+			<groupdescription>			
+				<name>
+					Marsupiala
+				</name>
+				<othernames>
+					<othername>Mammals</othername>
+				</othernames>
+				<childrengroup>
+					<group name="didelphimorphia"></group>
+					<group name="paucituberculata"></group>
+					<group name="microbiotheria"></group>
+					<group name="dasyuromorphia"></group>
+					<group name="peramelemorphia"></group>
+					<group name="notoryctemorphia"></group>
+					<group name="diprotodontia"></group>
+				</childrengroup>
+				<description>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+				</description>
+				<pictures>
+					<picture id="mar1"></picture>
+					<picture id="mar2"></picture>
+					<picture id="mar3"></picture>
+				</pictures>
+			</groupdescription>
 		</group>
 	</groups>
 	
 	<pictures>
-	
+		<picture id="mam1" src="/img/mammalia1.jpg">
+			<picturedescription>
+				<scientificname>Macropus giganteus</scientificname>
+				<location>Goorooyarro o Nature Reserve, ACT, Australia</location>
+				<sex></sex>
+				<specimencondition>Live Specimen</specimencondition>
+				<lifecyclestage>juvenile and adult</lifecyclestage>
+				<source>Eastern Grey Kangaro</source>
+				<sourcecollection>Flickr</sourcecollection>
+				<imageuse>CC</imageuse>
+				<copyright>David Cook</copyright>
+				<copyrightyears>2008</copyrightyears>
+				<comment></comment>
+			</picturedescription>
+		</picture>
+		<!--
+		<picture id="mam2" src="/img/mammalia2.jpg"></picture>
+		<picture id="mam3" src="/img/mammalia3.jpg"></picture>
+		<picture id="mar1" src="/img/marsupiala1.jpg"></picture>
+		<picture id="mar2" src="/img/marsupiala2.jpg"></picture>
+		<picture id="mar3" src="/img/marsupiala3.jpg"></picture>
+		-->
 	</pictures>
 </document>
