@@ -8,7 +8,7 @@
 	</xsd:element>
 	
 	<xsd:element name="groups">
-		<xsd:element ref="group" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+		<xsd:element ref="group" minOccurs="1" maxOccurs="unbounded" />
 	</xsd:element>
 	
 </schema>
