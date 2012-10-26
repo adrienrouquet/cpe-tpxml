@@ -3,13 +3,13 @@
 	<xsl:template match="/document">
 		<html>
 			<head>
-			<style type="text/css">
-			html body {
-				height:100%;
-				margin:0px;
-				padding:0px;
-			}
-			</style>
+<!-- 			<style type="text/css"> -->
+<!-- 			html body { -->
+<!-- 				height:100%; -->
+<!-- 				margin:0px; -->
+<!-- 				padding:0px; -->
+<!-- 			} -->
+<!-- 			</style> -->
 			</head>
 			<body>
 				<xsl:for-each select="/document/groups/group">	
@@ -32,24 +32,25 @@
 								<xsl:value-of select='groupdescription/description'/>
 							</div>
 						</p>
-						<p style="position:absolute; bottom:0">
+						<p>
 						Pictures:<br/>
-							<xsl:for-each select="groupdescription/pictures">
-								<div style="width:30%;>
-								<xsl:variable name="idpict" select="picture/@id" ></xsl:variable>				
-									<xsl:if test="picture/@id = /document/pictures/picture/@id" >
-										
-										<xsl:value-of select='/document/pictures/picture/picturedescription/copyrightyears'/><br/>
-										<xsl:variable name="src" select='/document/pictures/picture/picturedescription/@src'/>
-										<img src="{$src}"></img><br/>
-										<xsl:value-of select='/document/pictures/picture/picturedescription/scientificname'/><br/>
-										<xsl:value-of select='/document/pictures/picture/picturedescription/sex'/><br/>
-										<xsl:value-of select='/document/pictures/picture/picturedescription/specimencondition'/><br/>
-									</xsl:if>
-									
-									
-								</div>
-							</xsl:for-each>
+							<table>
+								<xsl:for-each select="groupdescription/pictures/picture">
+									<xsl:variable name="idpict" select="@id" />
+									<xsl:for-each select="/document/pictures/picture" >
+										<xsl:if test="@id = $idpict" >
+												<td>
+												<xsl:value-of select='picturedescription/copyrightyears'/><br/>
+												<xsl:variable name="src" select='picturedescription/@src'/>
+												<img src="{$src}"></img><br/>
+												<xsl:value-of select='picturedescription/scientificname'/><br/>
+												<xsl:value-of select='picturedescription/sex'/><br/>
+												<xsl:value-of select='picturedescription/specimencondition'/><br/>
+												</td>
+										</xsl:if>
+									</xsl:for-each>
+								</xsl:for-each>
+							</table>
 						</p>
 					</div>
 				</xsl:for-each>
