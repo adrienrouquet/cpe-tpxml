@@ -106,5 +106,52 @@
 				<comment></comment>
 			</picturedescription>
 		</picture>
+		<picture id="mar1">
+			<picturedescription src="./img/marsupiala1.jpg">
+				<scientificname>Macropus giganteus</scientificname>
+				<location>Goorooyarro o Nature Reserve, ACT, Australia</location>
+				<sex></sex>
+				<specimencondition>Live Specimen</specimencondition>
+				<lifecyclestage>juvenile and adult</lifecyclestage>
+				<source>Eastern Grey Kangaro</source>
+				<sourcecollection>Flickr</sourcecollection>
+				<imageuse>CC</imageuse>
+				<copyright>David Cook</copyright>
+				<copyrightyears>2008</copyrightyears>
+				<comment></comment>
+			</picturedescription>
+		</picture>
+		
+		<picture id="mar2">
+			<picturedescription src="./img/marsupiala2.jpg">
+				<scientificname>Panthera leo</scientificname>
+				<location>Okavango Delta, Botswana</location>
+				<sex></sex>
+				<specimencondition>Live Specimen</specimencondition>
+				<lifecyclestage></lifecyclestage>
+				<source></source>
+				<sourcecollection></sourcecollection>
+				<imageuse></imageuse>
+				<copyright>Greg and Marybeth Dimijian</copyright>
+				<copyrightyears>2000</copyrightyears>
+				<comment>African Lion</comment>
+			</picturedescription>
+		</picture>
+		
+		<picture id="mar3">
+			<picturedescription src="./img/marsupiala3.jpg">
+				<scientificname>Tachyglos sus aculeatus</scientificname>
+				<location>Australia</location>
+				<sex></sex>
+				<specimencondition>Live Specimen</specimencondition>
+				<lifecyclestage></lifecyclestage>
+				<source>Echidna</source>
+				<sourcecollection>Flickr</sourcecollection>
+				<imageuse>CC</imageuse>
+				<copyright>Julian Robinson</copyright>
+				<copyrightyears>2008</copyrightyears>
+				<comment></comment>
+			</picturedescription>
+		</picture>
 	</pictures>
 </document>
