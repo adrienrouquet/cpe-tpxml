@@ -2,15 +2,6 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/document">
 		<html>
-			<head>
-<!-- 			<style type="text/css"> -->
-<!-- 			html body { -->
-<!-- 				height:100%; -->
-<!-- 				margin:0px; -->
-<!-- 				padding:0px; -->
-<!-- 			} -->
-<!-- 			</style> -->
-			</head>
 			<body>
 				<xsl:for-each select="/document/groups/group">	
 					<div style="border:black solid 0.2em; margin:1em;">
