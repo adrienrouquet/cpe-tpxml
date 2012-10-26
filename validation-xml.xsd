@@ -12,11 +12,7 @@
 	<xsd:element name="groups">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="group" minOccurs="1" maxOccurs="unbounded">
-					<xsd:complexType>
-						<xsd:attribute name="name" type="xsd:string" use="required"/>
-					</xsd:complexType>
-				</xsd:element>	
+				<xsd:element ref="group" minOccurs="1" maxOccurs="unbounded"/>	
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
@@ -60,13 +56,9 @@
 	
 	<xsd:element name="pictures">
 		<xsd:complexType>
-			<xsd:sequence>
-				<xsd:element name="picture" minOccurs="1" maxOccurs="unbounded">
-					<xsd:complexType>
-						<xsd:attribute name="id" type="xsd:string" use="required"/>
-					</xsd:complexType>
-				</xsd:element>
-			</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element ref="picture" minOccurs="1" maxOccurs="unbounded"/>
+				</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
 	
@@ -76,7 +68,6 @@
 				<xsd:element ref="picturedescription" minOccurs="0" maxOccurs="1" />
 			</xsd:sequence>
 			<xsd:attribute name="id" type="xsd:string" use="required" />
-			<xsd:attribute name="src" type="xsd:string" use="required" />
 		</xsd:complexType>
 	</xsd:element>
 	
@@ -95,6 +86,7 @@
 				<xsd:element name="copyrightyears" type="xsd:string" />
 				<xsd:element name="comment" type="xsd:string" />
 			</xsd:sequence>
+			<xsd:attribute name="src" type="xsd:string" use="required" />
 		</xsd:complexType>
 	</xsd:element>
 	
