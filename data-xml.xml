@@ -74,12 +74,37 @@
 				<comment></comment>
 			</picturedescription>
 		</picture>
-		<!--
-		<picture id="mam2" src="/img/mammalia2.jpg"></picture>
-		<picture id="mam3" src="/img/mammalia3.jpg"></picture>
-		<picture id="mar1" src="/img/marsupiala1.jpg"></picture>
-		<picture id="mar2" src="/img/marsupiala2.jpg"></picture>
-		<picture id="mar3" src="/img/marsupiala3.jpg"></picture>
-		-->
+		
+		<picture id="mam2">
+			<picturedescription src="/img/mammalia2.jpg">
+				<scientificname>Panthera leo</scientificname>
+				<location>Okavango Delta, Botswana</location>
+				<sex></sex>
+				<specimencondition>Live Specimen</specimencondition>
+				<lifecyclestage></lifecyclestage>
+				<source></source>
+				<sourcecollection></sourcecollection>
+				<imageuse></imageuse>
+				<copyright>Greg and Marybeth Dimijian</copyright>
+				<copyrightyears>2000</copyrightyears>
+				<comment>African Lion</comment>
+			</picturedescription>
+		</picture>
+		
+		<picture id="mam3">
+			<picturedescription src="/img/mammalia3.jpg">
+				<scientificname>Tachyglos sus aculeatus</scientificname>
+				<location>Australia</location>
+				<sex></sex>
+				<specimencondition>Live Specimen</specimencondition>
+				<lifecyclestage></lifecyclestage>
+				<source>Echidna</source>
+				<sourcecollection>Flickr</sourcecollection>
+				<imageuse>CC</imageuse>
+				<copyright>Julian Robinson</copyright>
+				<copyrightyears>2008</copyrightyears>
+				<comment></comment>
+			</picturedescription>
+		</picture>
 	</pictures>
 </document>
