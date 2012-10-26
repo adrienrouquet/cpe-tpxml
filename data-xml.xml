@@ -60,7 +60,7 @@
 	
 	<pictures>
 		<picture id="mam1">
-			<picturedescription src="/img/mammalia1.jpg">
+			<picturedescription src="./img/mammalia1.jpg">
 				<scientificname>Macropus giganteus</scientificname>
 				<location>Goorooyarro o Nature Reserve, ACT, Australia</location>
 				<sex></sex>
@@ -76,7 +76,7 @@
 		</picture>
 		
 		<picture id="mam2">
-			<picturedescription src="/img/mammalia2.jpg">
+			<picturedescription src="./img/mammalia2.jpg">
 				<scientificname>Panthera leo</scientificname>
 				<location>Okavango Delta, Botswana</location>
 				<sex></sex>
@@ -92,7 +92,7 @@
 		</picture>
 		
 		<picture id="mam3">
-			<picturedescription src="/img/mammalia3.jpg">
+			<picturedescription src="./img/mammalia3.jpg">
 				<scientificname>Tachyglos sus aculeatus</scientificname>
 				<location>Australia</location>
 				<sex></sex>
